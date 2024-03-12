@@ -38,7 +38,7 @@ const celsiuss = document.getElementById("cels");
 const btncelKel = document.getElementById("resultKel");
 
 function celTokel() {
-    const celsValue = celsiuss.value
+    const celsValue = Number(celsiuss.value);
     const convcelKel = celsValue + 273.15;
 
     document.getElementById("demo4").innerHTML= celsValue +"°Celsius = "+ convcelKel +"° Kelvin";
